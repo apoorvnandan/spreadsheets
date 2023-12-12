@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spreadsheets</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        #spreadsheet {
+            border: 1px solid black;
+            width: 1024px;
+            height: 1024px;
+        }
+
+        #selectedCellBorder,
+        #selectedRange,
+        #textInput {
+            position: absolute;
+        }
+
+        #textInput {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="spreadsheet"></canvas>
+    <div id="selectedCellBorder"></div>
+    <div id="selectedRange"></div>
+    <div contenteditable="true" id="textInput"></div>
+    <script src="app.js"></script>
+</body>
+
+</html>
