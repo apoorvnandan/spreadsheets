@@ -21,6 +21,7 @@
 
         #selectedCellBorder,
         #selectedRange,
+        #selectedCellFormula,
         #textInput {
             position: absolute;
         }
@@ -29,14 +30,17 @@
             display: none;
         }
     </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/12.2.0/math.js"></script>
 </head>
 
 <body>
     <canvas id="spreadsheet"></canvas>
     <div id="selectedCellBorder"></div>
+    <div id="selectedCellFormula"></div>
     <div id="selectedRange"></div>
     <div contenteditable="true" id="textInput"></div>
     <script src="app.js"></script>
+
 </body>
 
 </html>
